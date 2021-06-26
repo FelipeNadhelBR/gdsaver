@@ -10,7 +10,7 @@ function getGDSave() {
   return getUserHome() + "\\AppData" + "\\Local" + "\\GeometryDash"
 }
 
-console.log("GDSaver 1.0 - Made by Munko :3");
+console.log("- GDSaver 1.0 -");
 
 console.log("Geometry Dash data located at: " + getGDSave() + "\n");
 
@@ -67,7 +67,7 @@ fs.copyFile(pathToFile4, pathToNewDestination4, function(err) {
 
 }
 
-// Hey man which directory did you wanna put the thing :3
+// Hey man which directory did you wanna put the thing
 
 var readline = require('readline');
 var resp = "";
@@ -83,6 +83,4 @@ userquestion.question("Destination path? ", function(answer) {
     userquestion.close();
 
     CopyFiles(resp)
-
-    console.log("\nAll files copied sucessfully! Thank you for using GDSaver.");
 });
